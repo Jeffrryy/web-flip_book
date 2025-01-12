@@ -13,6 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Menghubungkan font "Poly" dari Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        #desktop-mode-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
@@ -110,6 +122,29 @@
         </div>
     </div>
 
+    <!-- Pop-up untuk mode desktop -->
+    <div id="desktop-mode-popup" style="display: none;">
+        <p>Silakan ubah ke mode desktop untuk melihat isi web ini.</p>
+        <button onclick="closePopup()">Tutup</button>
+    </div>
+
+    <script>
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function showPopup() {
+            if (isMobileDevice()) {
+                document.getElementById('desktop-mode-popup').style.display = 'block';
+            }
+        }
+
+        function closePopup() {
+            document.getElementById('desktop-mode-popup').style.display = 'none';
+        }
+
+        window.onload = showPopup;
+    </script>
 </body>
 
 </html>
