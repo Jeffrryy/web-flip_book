@@ -6,10 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip Book</title>
+    <!-- Menghubungkan file CSS eksternal untuk styling -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Preconnect ke Google Fonts untuk meningkatkan kinerja -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Menghubungkan font "Poly" dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Input checkbox untuk mengontrol tampilan halaman flip book -->
     <input type="checkbox" id="cover_checkbox">
     <input type="checkbox" id="page1_checkbox">
     <input type="checkbox" id="page2_checkbox">
@@ -17,77 +24,90 @@
     <input type="checkbox" id="page4_checkbox">
     <input type="checkbox" id="page5_checkbox">
 
+    <!-- Kontainer utama untuk flip book -->
     <div id="flip_book">
+        <!-- Bagian depan cover buku -->
         <div class="front_cover">
             <label for="cover_checkbox" id="cover"></label>
+            <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
+            <img class="front_content" src="./resources/images/Frıends.jpg" alt="Front ">
+
         </div>
 
+        <!-- Halaman pertama buku -->
         <div class="page" id="page1">
             <div class="front_page">
-                <label for="page1_checkbox"></label>
+                <label for="page1_checkbox">page 1</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
                 <img class="front_content" src="./resources/images/page1.jpg" alt="Front content">
             </div>
             <div class="back_page">
-                <label for="page1_checkbox"></label>
+                <label for="page1_checkbox">page 2</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
                 <img class="back_content" src="./resources/images/page2.jpg" alt="Back content">
             </div>
         </div>
 
+        <!-- Halaman kedua buku -->
         <div class="page" id="page2">
             <div class="front_page">
-                <label for="page2_checkbox"></label>
+                <label for="page2_checkbox">page 3</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
                 <img class="front_content" src="./resources/images/page3.jpg" alt="Front content">
             </div>
             <div class="back_page">
-                <label for="page2_checkbox"></label>
+                <label for="page2_checkbox">page 4</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
                 <img class="back_content" src="./resources/images/page4.jpg" alt="Back content">
             </div>
         </div>
 
+        <!-- Halaman ketiga buku -->
         <div class="page" id="page3">
             <div class="front_page">
-                <label for="page3_checkbox"></label>
+                <label for="page3_checkbox">page 5</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
                 <img class="front_content" src="./resources/images/page5.jpg" alt="Front content">
             </div>
             <div class="back_page">
-                <label for="page3_checkbox"></label>
+                <label for="page3_checkbox">page 6</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
                 <img class="back_content" src="./resources/images/page6.jpg" alt="Back content">
             </div>
         </div>
 
+        <!-- Halaman keempat buku -->
         <div class="page" id="page4">
             <div class="front_page">
-                <label for="page4_checkbox"></label>
+                <label for="page4_checkbox">7</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
                 <img class="front_content" src="./resources/images/page7.jpg" alt="Front content">
             </div>
             <div class="back_page">
-                <label for="page4_checkbox"></label>
+                <label for="page4_checkbox">8</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
                 <img class="back_content" src="./resources/images/page8.jpg" alt="Back content">
             </div>
         </div>
 
+        <!-- Halaman kelima buku -->
         <div class="page" id="page5">
             <div class="front_page">
-                <label for="page5_checkbox"></label>
+                <label for="page5_checkbox">9</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
                 <img class="front_content" src="./resources/images/page9.jpg" alt="Front content">
             </div>
             <div class="back_page">
-                <label for="page5_checkbox"></label>
+                <label for="page5_checkbox">10</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
                 <img class="back_content" src="./resources/images/page10.jpg" alt="Back content">
             </div>
         </div>
 
-        <div class="back_cover"></div>
+        <!-- Bagian belakang cover buku -->
+        <div class="back_cover">
+            
+        </div>
     </div>
 
 </body>

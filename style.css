@@ -1,3 +1,6 @@
+/* 
+   Mengatur semua elemen, pseudo-elemen sebelum dan sesudah untuk menggunakan box-sizing border-box,
+   menghilangkan margin dan padding default, serta mengatur font dan warna teks. */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +9,25 @@
     color: rgb(25, 25, 25);
 }
 
+/* 
+   Kelas untuk teks dengan font "Poly" yang memiliki gaya normal dan berat 400. */
+.poly-regular {
+    font-family: "Poly", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+   Kelas untuk teks dengan font "Poly" yang memiliki gaya italic dan berat 400. */
+.poly-regular-italic {
+    font-family: "Poly", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* 
+   Mengatur tampilan body dengan flexbox, mengatur ukuran penuh layar, 
+   dan memberikan latar belakang serta font default. */
 body {
     display: flex;
     flex-direction: column;
@@ -13,13 +35,20 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(70, 130, 180);
+    font-family: "Poly", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+/* 
+   Menyembunyikan elemen input dari tampilan. */
 input {
     display: none;
 }
 
+/* 
+   Mengatur elemen dengan id flip_book untuk memiliki perspektif 3D dan ukuran tertentu. */
 #flip_book {
     position: relative;
     width: 298px;
@@ -28,6 +57,9 @@ input {
     perspective: 2000px;
 }
 
+/* 
+   Mengatur tampilan depan dan belakang dari cover buku dengan gaya flex, 
+   latar belakang gambar, dan bayangan. */
 .front_cover, .back_cover {
     display: flex;
     justify-content: center;
@@ -39,10 +71,12 @@ input {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(220, 20, 60);
-    box-shadow: 0 0 5px 0 rgb(25, 25, 25, 0.25);
+    background-color: rgb(240, 248, 255);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* 
+   Mengatur tampilan depan cover buku agar bisa diklik dan memiliki animasi transformasi. */
 .front_cover {
     position: absolute;
     cursor: pointer;
@@ -51,27 +85,36 @@ input {
     z-index: 99;
 }
 
+/* 
+   Mengatur label dalam cover depan agar bisa diklik dan menutupi seluruh area. */
 .front_cover label {
     position: absolute;
     width: 100%;
     height: 100%;
     cursor: pointer;
+    z-index: 101;
 }
 
+/* 
+   Mengatur halaman buku dengan posisi absolut, ukuran tertentu, dan animasi rotasi. */
 .page {
     position: absolute;
-    top: 10px;
-    left: 1px;
-    width: 288px;
-    height: 400px;
+    /* top: 10px;
+    left: 1px; */
+    /* width: 288px;
+    height: 400px; */
+    width: 100%;
+    height: 100%;
     border-radius: 0 5px 5px 0;
-    background-color: white;
+    background-color: rgb(224, 255, 255);
     transform-origin: left;
     transform-style: preserve-3d;
     transform: rotateY(0deg);
     transition-duration: 0.5s;
 }
 
+/* 
+   Mengatur tampilan depan halaman agar tidak terlihat dari belakang. */
 .front_page {
     position: absolute;
     width: 100%;
@@ -79,14 +122,18 @@ input {
     backface-visibility: hidden;
 }
 
+/* 
+   Mengatur label dalam halaman depan agar bisa diklik dan menutupi seluruh area. */
 .front_page label {
     position: absolute;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
 }
 
+/* 
+   Mengatur tampilan belakang halaman dengan rotasi 180 derajat agar tidak terlihat dari depan. */
 .back_page {
     position: absolute;
     width: 100%;
@@ -96,102 +143,140 @@ input {
     z-index: 100;
 }
 
+/* 
+   Mengatur label dalam halaman belakang agar bisa diklik dan menutupi seluruh area. */
 .back_page label {
     position: absolute;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
 }
 
+/* 
+   Mengatur elemen shading pada tepi halaman dengan posisi absolut. */
 .edge_shading {
     position: absolute;
-    width: 288px;
-    height: 400px;
+    /* width: 288px;
+    height: 400px; */
+    width: 100%;
+    height: 100%;
     z-index: 98;
 }
 
+/* 
+   Mengatur konten depan halaman dengan posisi absolut dan z-index tertentu. */
 .front_content {
     position: absolute;
-    top: 1px;
-    width: 287px;
-    height: 398px;
+    width: 100%;
+    height: 100%;
     border-radius: 0 5px 5px 0;
-    z-index: 97;
+    z-index: 100;
 }
 
+/* 
+   Mengatur konten belakang halaman dengan posisi absolut dan z-index tertentu. */
 .back_content {
     position: absolute;
     top: 1px;
     left: 1px;
-    width: 287px;
-    height: 398px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px 0 0 5px;
     z-index: 97;
 }
 
+/* 
+   Mengatur posisi relatif dan z-index dari cover belakang. */
 .back_cover {
     position: relative;
     z-index: -1;
 }
 
+/* 
+   Mengatur z-index untuk halaman pertama. */
 #page1 {
     z-index: 8;
 }
 
+/* 
+   Mengatur z-index untuk halaman kedua. */
 #page2 {
     z-index: 5;
 }
 
+/* 
+   Mengatur z-index untuk halaman ketiga. */
 #page3 {
     z-index: 4;
 }
 
+/* 
+   Mengatur z-index untuk halaman keempat. */
 #page4 {
     z-index: 3;
 }
 
+/* 
+   Mengatur z-index untuk halaman kelima. */
 #page5 {
     z-index: 2;
 }
 
+/* 
+   Mengatur transformasi dan posisi elemen flip_book ketika checkbox cover diaktifkan. */
 #cover_checkbox:checked~#flip_book {
-    transform: translateX(144px)
+    transform: translateX(144px);
 }
 
+/* 
+   Mengatur transformasi dan z-index dari cover depan ketika checkbox cover diaktifkan. */
 #cover_checkbox:checked~#flip_book .front_cover {
     transform: rotateY(-180deg);
     transition: transform 1.5s, z-index 0.5s 0.5s;
     z-index: 1;
 }
 
+/* 
+   Mengatur posisi dan ukuran elemen cover ketika checkbox cover diaktifkan. */
 #cover_checkbox:checked~#flip_book #cover {
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 
+/* 
+   Mengatur transformasi dan z-index dari halaman pertama ketika checkbox halaman pertama diaktifkan. */
 #page1_checkbox:checked~#flip_book #page1 {
     transform: rotateY(-180deg);
     z-index: 2;
 }
 
+/* 
+   Mengatur transformasi dan z-index dari halaman kedua ketika checkbox halaman kedua diaktifkan. */
 #page2_checkbox:checked~#flip_book #page2 {
     transform: rotateY(-180deg);
     z-index: 3;
 }
 
+/* 
+   Mengatur transformasi dan z-index dari halaman ketiga ketika checkbox halaman ketiga diaktifkan. */
 #page3_checkbox:checked~#flip_book #page3 {
     transform: rotateY(-180deg);
     z-index: 4;
 }
 
+/* 
+   Mengatur transformasi dan z-index dari halaman keempat ketika checkbox halaman keempat diaktifkan. */
 #page4_checkbox:checked~#flip_book #page4 {
     transform: rotateY(-180deg);
     z-index: 5;
 }
 
+/* 
+   Mengatur transformasi dan z-index dari halaman kelima ketika checkbox halaman kelima diaktifkan. */
 #page5_checkbox:checked~#flip_book #page5 {
     transform: rotateY(-180deg);
     z-index: 6;
 }
+
