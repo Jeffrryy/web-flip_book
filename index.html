@@ -11,20 +11,7 @@
     <!-- Preconnect ke Google Fonts untuk meningkatkan kinerja -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Menghubungkan font "Poly" dari Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-        #desktop-mode-popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poly:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -35,6 +22,8 @@
     <input type="checkbox" id="page3_checkbox">
     <input type="checkbox" id="page4_checkbox">
     <input type="checkbox" id="page5_checkbox">
+    <input type="checkbox" id="page6_checkbox">
+    <input type="checkbox" id="page7_checkbox">
 
     <!-- Kontainer utama untuk flip book -->
     <div id="flip_book">
@@ -49,102 +38,132 @@
         <!-- Halaman pertama buku -->
         <div class="page" id="page1">
             <div class="front_page">
-                <label for="page1_checkbox">page 1</label>
+                <label for="page1_checkbox" class="Judul">Terima kasih untuk kehadiranmu</label>
+                <label for="page1_checkbox" class="Isi">9 Agustus 2024, pertama kali kita bertemu dan disaat itu aku masih belum meyakinkan diri ku sendiri kalau aku memang sedang jatuh cinta. Seiring berjalannya waktu entah mengapa melihat kamu selalu muncul dipikiran ku, disaat itu lah aku baru sadar bahwa aku sedang jatuh cinta. Kamu datang disaat aku udah hopeless tentang percintaan dan berada di titik terbawah. jatuh cinta kali ini terasa, damai tidak mengejar atau pun berlari. terima kasih sudah hadir di sela kesibukan, risuhnya keluarga. aku doakan kamu tiap saat dengan cara ku sendiri.</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
-                <img class="front_content" src="./resources/images/page1.jpg" alt="Front content">
+             
             </div>
             <div class="back_page">
-                <label for="page1_checkbox">page 2</label>
+                <label for="page1_checkbox" class="Judul">"pilihanmu, bahagiaku"</label>
+                <label for="page1_checkbox" class="Isi">semua pilihan yang kamu pilih aku akan selalu support walaupun pilihan itu bukan tentang aku. aku berada di fase dimana melepaskan kamu adalah wujud cinta terbesar ku. kita mulai jalan ke arah tujuan hidup kita masing-masing. kamu menemukan seseorang yang bagi kamu memang baik untuk kamu, aku akan senang jika mendengarkan kabar itu. karena itu semua pilihan kamu sendiri.</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
-                <img class="back_content" src="./resources/images/page2.jpg" alt="Back content">
+                
             </div>
         </div>
 
         <!-- Halaman kedua buku -->
         <div class="page" id="page2">
             <div class="front_page">
-                <label for="page2_checkbox">page 3</label>
+                <label for="page2_checkbox" class="Judul">"kesan berharga dari pertemuan singkat"</label>
+                <label for="page2_checkbox" class="Isi">tentang diriku aku pun tak tahu, pertama kali di hidupku merasakan rasa ini. pertemuan kita cuma sebentar, aku harap di waktu yang sebentar ini aku bisa meninggalkan kesan yang berharga bagi kamu. aku akan selalu ada untuk kamu.</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
-                <img class="front_content" src="./resources/images/page3.jpg" alt="Front content">
+               
             </div>
             <div class="back_page">
-                <label for="page2_checkbox">page 4</label>
+                <label for="page2_checkbox" class="Judul"> "rasa yang tak terjelaskan"</label>
+                <label for="page2_checkbox" class="Isi">jangan tanya kenapa aku bisa kaya gini ke kamu karena aku sendiri tidak tahu. terima kasih sudah mau mendengarkan cerita aku dan mau bercerita ke diri aku ini. walaupun memang ini adalah hal yang simple dan biasa saja bagi kamu, tapi sangat berharga untuk diriku ini, sungguh sangat berharga.
+
+                </label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
-                <img class="back_content" src="./resources/images/page4.jpg" alt="Back content">
+                
             </div>
         </div>
 
         <!-- Halaman ketiga buku -->
         <div class="page" id="page3">
             <div class="front_page">
-                <label for="page3_checkbox">page 5</label>
+                <label for="page3_checkbox" class="Judul">"aku cinta kamu"</label>
+                <label for="page3_checkbox" class="Isi">aku akan bilang sekali lagi, aku cinta kamu. semua hal tentangmu membuatku jatuh, tidak peduli apa perkataan orang lain, kamu adalah sosok "sempurna" bagiku.</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
-                <img class="front_content" src="./resources/images/page5.jpg" alt="Front content">
+                
             </div>
             <div class="back_page">
-                <label for="page3_checkbox">page 6</label>
+                <label for="page3_checkbox" class="Judul">"mendoakan dalam perpisahan"</label>
+                <label for="page3_checkbox" class="Isi">disaat aku sudah menuju kuliah, menempuh arah tujuan hidupku, dan kamu menempuh ke arah tujuan hidupmu juga, aku akan selalu mendoakan kamu. terima kasih sudah ada bagiku walaupun waktu kita cuma sebentar banget.</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
-                <img class="back_content" src="./resources/images/page6.jpg" alt="Back content">
+                
             </div>
         </div>
 
         <!-- Halaman keempat buku -->
         <div class="page" id="page4">
             <div class="front_page">
-                <label for="page4_checkbox">7</label>
+                <label for="page4_checkbox" class="Judul">"maaf dan rasa syukur"</label>
+                <label for="page4_checkbox" class="Isi">kamu tidak akan mengerti bagaimana rasaku ini ke kamu, bagaimana kamu berpengaruh sekali di hidupku ini. aku minta maaf kalau aku terkadang ngebuat kamu kesel, marah, atau sakit hati dengan kata-kataku. percayalah perbuatanku itu dilakukan secara tidak sengaja.</label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
-                <img class="front_content" src="./resources/images/page7.jpg" alt="Front content">
+              
             </div>
             <div class="back_page">
-                <label for="page4_checkbox">8</label>
+                <label for="page4_checkbox" class="Judul">"kamu, inspirasiku"</label>
+                <label for="page4_checkbox" class="Isi">kamu sudah membuka sesuatu yang terpendam dalam diriku. disaat aku melihatmu, mengingatmu, diriku selalu ingin menjadi pribadi yang lebih baik. disaat melihatmu, aku ingin mencintai diriku sendiri, lalu aku bisa mencintai mu setulus-tulusnya.</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
-                <img class="back_content" src="./resources/images/page8.jpg" alt="Back content">
+
             </div>
         </div>
 
         <!-- Halaman kelima buku -->
         <div class="page" id="page5">
             <div class="front_page">
-                <label for="page5_checkbox">9</label>
+                <label for="page5_checkbox" class="Judul">"takdir dan tembok tinggi"</label>
+                <label for="page5_checkbox" class="Isi">diawal aku ingin sekali memilikimu. namun takdir berkata lain aku tidak bisa memilikimu. Mungkin ini kah yang dimaksud orang yang tepat, di waktu yang salah? Tapi sudahlah apa yang terjadi sudah terjadi. Aku hanya bisa berandai andai kita bisa bersama tanpa adanya halangan. Ingin ku bilang lagi aku akan selalu menemani mu </label>
                 <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
-                <img class="front_content" src="./resources/images/page9.jpg" alt="Front content">
+            
             </div>
             <div class="back_page">
-                <label for="page5_checkbox">10</label>
+                <label for="page5_checkbox" class="Judul"> "melepas dengan ikhlas"</label>
+                <label for="page5_checkbox" class="Isi">disaat kamu sudah menemukan seseorang aku akan mundur perlahan, lalu aku akan memperbaiki diriku sendiri. 
+                kamu adalah sosok yang telah mewarnai hatiku, kamu menggapai tanganku saat ku berada di kondisi terpuruk.</label>
                 <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
-                <img class="back_content" src="./resources/images/page10.jpg" alt="Back content">
+           <!-- lajutin benerin pagenya masih ketimpa pas mau bikin page ke 6 -->
+            </div>
+            
+        </div>
+        <!-- Halaman keenam buku -->
+        <div class="page" id="page6">
+            <div class="front_page">
+                <label for="page6_checkbox" class="Judul">"terima kasih untuk segalanya"</label>
+                <label for="page6_checkbox" class="Isi">tidak ada orang yang sampai segitunya berusaha menolong aku disaat aku berada di posisi itu. namun kamu mau mendengarkan, memberikan solusi. senyummu, candaanmu, interaksi antar kita berdua, suaramu, rambutmu, matamu, sikapmu, pedulimu, bagaimana cara kamu menghadapi masalah, masih banyak lagi hal ku kagumkan darimu. aku belajar banyak darimu.</label>
+                <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
+            </div>
+            <div class="back_page">
+                <label for="page6_checkbox" class="Judul">"pesanku untukmu"</label>
+                <label for="page6_checkbox" class="Isi">berisikanlah terima kasih pada dirimu sendiri, sayangi dirimu, kau maafkan semua salahmu, dan hari ini ajak dirimu bicara mesra. berjujurlah pada dirimu, kau bisa percaya, maafkan semua yang sudah berlalu. Aku tau semua hal itu tidaklah mudah. Lakukan perlahan, bukankah kamu ingin melihat versi diri terbaik darimu? </label>
+                <img class="edge_shading" src="./resources/images/back_page_edge_shading.png" alt="Back page edge shading">
             </div>
         </div>
+        <div class="page" id="page7">
+            <div class="front_page">
+                <label for="page7_checkbox" class="Judul"> "menunggu dengan harapan"</label>
+                <label for="page7_checkbox" class="Isi">aku tau kamu susah untuk melakukan hal itu semua ke dirimu sendiri. lakukan perlahan, namun pasti. bukankah kamu ingin melihat versi diri terbaik darimu? aku akan selalu menunggu mu, kalau kamu butuh seseorang untuk menggapai tanganmu. aku akan berusaha untuk ada bagimu, cukup kabari saja aku dan kita akan mencari solusi bersama. Aku tidak ingin membohongi diri ku sendiri,hati kecilku ini masih menaruh sedikit harapan. aku akan selalu menunggu mu.</label>
+                <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
+            </div>
+            <div class="back_page">
+                <label for="page7_checkbox" class="Judul"> "Sisa Waktu"</label>
+                <label for="page7_checkbox" class="Isi">Dengan sisa waktu yang sebentar ini, mari kita buat kenang kenangan bersama. Aku mohon kita jangan asing ya, sekali lagi ku ingatkan
+                </label>
+                <label for="page7_checkbox" class="aku_cinta_kamu"> "Aku Cinta Kamu"
+                    <br>
+                From 
+                <br>
+                Niko Chriastian
+                <br> 
+                To
+                <br> 
+                Vermitha annatasya</label>
+                <img class="edge_shading" src="./resources/images/front_page_edge_shading.png" alt="Front page edge shading">
+            </div>
+            
+        </div>
+
+        <!-- halaman ketujuh -->
+      
+        <!-- halaman kedelapan -->
 
         <!-- Bagian belakang cover buku -->
         <div class="back_cover">
-            
         </div>
     </div>
 
-    <!-- Pop-up untuk mode desktop -->
-    <div id="desktop-mode-popup" style="display: none;">
-        <p>Silakan ubah ke mode desktop untuk melihat isi web ini.</p>
-        <button onclick="closePopup()">Tutup</button>
-    </div>
-
-    <script>
-        function isMobileDevice() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-
-        function showPopup() {
-            if (isMobileDevice()) {
-                document.getElementById('desktop-mode-popup').style.display = 'block';
-            }
-        }
-
-        function closePopup() {
-            document.getElementById('desktop-mode-popup').style.display = 'none';
-        }
-
-        window.onload = showPopup;
-    </script>
 </body>
 
 </html>
